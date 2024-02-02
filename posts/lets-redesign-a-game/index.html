@@ -17,26 +17,26 @@
     
 
     
-    <title>Will Sasaki</title>
+    <title>Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨</title>
     <meta name="description" content="Home-grown Indie Games">
     <meta name="keywords" content='blog, gokarna, hugo'>
 
-    <meta property="og:url" content="https://wsasaki01.github.io/projects/">
+    <meta property="og:url" content="https://wsasaki01.github.io/posts/lets-redesign-a-game/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Will Sasaki">
+    <meta property="og:title" content="Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨">
     <meta property="og:description" content="Home-grown Indie Games">
     <meta property="og:image" content="https://wsasaki01.github.io/pfp.JPG">
     <meta property="og:image:secure_url" content="https://wsasaki01.github.io/pfp.JPG">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Will Sasaki">
+    <meta name="twitter:title" content="Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨">
     <meta name="twitter:description" content="Home-grown Indie Games">
-    <meta property="twitter:domain" content="https://wsasaki01.github.io/projects/">
-    <meta property="twitter:url" content="https://wsasaki01.github.io/projects/">
+    <meta property="twitter:domain" content="https://wsasaki01.github.io/posts/lets-redesign-a-game/">
+    <meta property="twitter:url" content="https://wsasaki01.github.io/posts/lets-redesign-a-game/">
     <meta name="twitter:image" content="https://wsasaki01.github.io/pfp.JPG">
 
     
-    <link rel="canonical" href="https://wsasaki01.github.io/projects/" />
+    <link rel="canonical" href="https://wsasaki01.github.io/posts/lets-redesign-a-game/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -132,37 +132,83 @@
 </header>
 <main id="content">
     <div class="post container">
-
     <div class="post-header-section">
-        <h1></h1>
+        <h1>Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 2, 2024
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
     </div>
 
     <div class="post-content">
         <p>
-            <h1 id="my-projects">My Projects</h1>
-<p>Here you can find a list of my game dev projects!</p>
+            <p>Hi, I&rsquo;m Will, and I&rsquo;m learning to make games!</p>
+<p>In summer 2023, I released a game called Icebreaker for PICO-8. I was really happy with how it turned out at the time, but looking back on it, I feel unsatisfied.</p>
+<p>
+
+<figure>
+  <img src="/images/icebreaker.gif" alt="test" loading="lazy" />
+  <figcaption style="text-align:center;color:grey;">Icebreaker Gameplay</figcaption>
+</figure>
+</p>
+<p>For reference, you can play that version of Icebreaker <a href="https://www.lexaloffle.com/bbs/?tid=53552">here</a>; it&rsquo;ll stay up even after the new version is done.</p>
+<p>If you aren&rsquo;t familiar with <a href="https://www.lexaloffle.com/pico-8.php">PICO-8</a>, it&rsquo;s a brilliant fantasy console made by <a href="https://twitter.com/lexaloffle">zep</a>. It includes a suite of simple tools for game development, and it emulates the hardware limitations of early game consoles, including a limited resolution and tiny file sizes for games.</p>
+<p>As I wrote on that original post from last year, I was motivated to make a PICO-8 game with twitchy action and visual polish as I hadn&rsquo;t seen many examples of that feel within the community. I think I partly achieved those, but there were a lot of design choices I made that don&rsquo;t really contribute to that goal, and many that are half- (or even quarter-) baked.</p>
+<p>So! I&rsquo;ve decided to remake Icebreaker from the ground up, documenting my progress so hopefully others can learn something from my mistakes.</p>
+<h2 id="setting-goals">Setting goals</h2>
+<p>The biggest issue with the original version is a lack of direction, resulting in a half-finished game that doesn&rsquo;t really lead the player anywhere. I&rsquo;m starting this project by setting clear goals and analysing what features and mechanics will really push the game in the direction I want.</p>
+<ul>
+<li>
+<h3 id="twitchy-combat">Twitchy combat!</h3>
+By this, I mean reaction-based gameplay demanding precise inputs. There should be an element of stress and tension during gameplay while balancing difficulty so the game isn&rsquo;t frustrating or too overwhelming.</li>
+<li>
+<h3 id="visual-polish">Visual polish!</h3>
+I want nice-looking pixel art and surprising visual elements, including dynamic code-driven animations. There should be visual consistency between all modes and screens, and appealing effects that contribute to a precise but chunky and impactful game-feel.</li>
+<li>
+<h3 id="limited-scope">Limited scope!</h3>
+The previous version of Icebreaker has too many inconsequential or pointless features. I want to hone in on the basics (because, in my testing, even the core gameplay is appealing enough) and build a less ambitious but more complete package.</li>
+</ul>
+<h2 id="meeting-those-goals">Meeting those goals</h2>
+<p>A big priority is a <strong>proper tutorial</strong>. The current version&rsquo;s tutorial was added <em>very</em> last-minute, and still there were gameplay mechanics that weren&rsquo;t explained at all, leading to some players getting stuck. I want to add a dedicated mandatory tutorial that steps through each mechanic, which can be replayed at any time for a quick refresher.</p>
 <hr>
-<h2 id="icebreakerhttpswwwlexalofflecombbstid53552"><a href="https://www.lexaloffle.com/bbs/?tid=53552">Icebreaker</a></h2>
-<p><em><strong>Released July 26th, 2023</strong></em></p>
-<p>Skill-based action brawler for PICO-8</p>
-<p><em>Having gotten used to PICO-8, I wanted to make something thrilling, as I hadn&rsquo;t seen many action games for the platform. I was craving a PICO-8 game with twitchy combat, high difficulty, and satisfying game-feel with visual polish.</em></p>
-<p><em>It proved difficult to stay within code token limits, and the shape of the project morphed and shifted constantly throughout development. Despite this, I&rsquo;m proud of the final build, which now provides the jumping-off point from PICO-8 to Unity development.</em></p>
-<div style="text-align:left;">
-    <img src="/images/icebreaker2.gif" style="margin-left:0;">
-</div>
+<p>The menu needs a redesign; the diegetic hub was cool to look at and interact with, but doesn&rsquo;t actually add anything to the game. I intended for it to create a smooth transition between the hub and gameplay (where the player always controls the main character), but without the hammer being included in that interaction, that hub ends up being cumbersome and largely inconsequential. I want to go back to a <strong>simple 2D menu</strong> with a level select and options.</p>
 <hr>
-<h2 id="mini-mineshttpswwwlexalofflecombbstid52577"><a href="https://www.lexaloffle.com/bbs/?tid=52577">Mini Mines</a></h2>
-<p><em><strong>Released May 1st, 2023</strong></em></p>
-<p>Minesweeper for PICO-8</p>
-<p><em>I developed Mini Mines to become more confident in PICO-8 and Lua. The code is something of a mess, but it taught me invaluable lessons about creating user interfaces and enjoyable controls within the restrictions of the console.</em></p>
-<div style="text-align:left;">
-    <img src="/images/mini-mines.gif" style="margin-left:0;">
-</div>
+<p>The levels need to be <strong>balanced and paced better</strong>, ramping up the difficulty much slower than the current version. Combined with the bad tutorial, the difficult starting levels made that version not very player-friendly.</p>
+<hr>
+<p>I ideally want to add some <strong>slight story/world elements</strong> to tie the whole experience together. I&rsquo;m interested in a lighthearted military aesthetic (à la Advance Wars), with a short repeated cutscene before and after each level. This might be difficult to squeeze into the file size, but it&rsquo;s a goal if possible.</p>
+<hr>
+<p><strong>Improved sprites</strong> (especially for the hammer) and <strong>UI</strong> are also on the list, along with some intro/exit animations (rather than just randomly spawning in at the start of each level).</p>
+<hr>
+<p>Also, the <strong>infinite play</strong> should have a dedicated mode, and should be presented to the player as being equally significant as the story levels. It&rsquo;s currently an end-game unlock, when really it should be a major feature - perhaps even more important than any finite levels.</p>
+<hr>
+<p>Finally, things to cut: <strong>attacking</strong> was pointless, so I&rsquo;m getting rid of it so you can only damage enemies by throwing the hammer; <strong>different hammers</strong> are fun, but I want to keep things simple; <strong>hammer mods</strong> create consistency and compatibility issues; the <strong>wave system</strong> is overly complicated and takes up so much code for something that doesn&rsquo;t add anything that valuable to the game.</p>
+<h2 id="lets-get-to-it">Let&rsquo;s get to it!</h2>
+<p>I&rsquo;ll be summarising any significant developments on (what is tentatively called) <strong>ICEBREAKER DX</strong> here on this blog. I don&rsquo;t have much free time from studies to work on this project, but I&rsquo;ll try to post as often as I can.</p>
+<p>That said, I&rsquo;m really excited to document my experience, and hopefully make something I&rsquo;m super proud of.</p>
+<p>Follow me on socials for updates!
+Twitter/X: <a href="https://twitter.com/wsasaki01">@wsasaki01</a>
+itch.io: <a href="https://wsasaki01.itch.io/">wsasaki01</a>
+Reddit: <a href="https://www.reddit.com/user/wsasaki">u/wsasaki01</a>
+Lexaloffle: <a href="https://www.lexaloffle.com/bbs/?uid=75896">someguy17</a></p>
+<p>See you soon!
+wsasaki</p>
+
         </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
     </div>
 </div>
 
 
+
+    
 
         </main><footer class="footer">
     

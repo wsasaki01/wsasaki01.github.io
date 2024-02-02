@@ -6,18 +6,17 @@
     <description>Recent content in Posts on Will Sasaki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Aug 2023 18:21:22 +0100</lastBuildDate><atom:link href="https://wsasaki01.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Feb 2024 00:30:21 +0000</lastBuildDate><atom:link href="https://wsasaki01.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First blog!! 🎉</title>
-      <link>https://wsasaki01.github.io/posts/about-this-blog/</link>
-      <pubDate>Tue, 22 Aug 2023 18:21:22 +0100</pubDate>
+      <title>Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨</title>
+      <link>https://wsasaki01.github.io/posts/lets-redesign-a-game/</link>
+      <pubDate>Fri, 02 Feb 2024 00:30:21 +0000</pubDate>
       
-      <guid>https://wsasaki01.github.io/posts/about-this-blog/</guid>
-      <description>Hi! I&amp;rsquo;m Will, and I&amp;rsquo;m learning to make games.
-This blog will feature my development experience across projects, including design, programming, and releasing builds to the public.
-The past few months, I&amp;rsquo;ve learned how to use PICO-8 (a fantasy game console), and Lua, releasing two games for the console.
-I&amp;rsquo;m currently learning how to use Unity while redesigning one of my PICO-8 games, Icebreaker.
-Icebreaker Gameplay I&amp;rsquo;m a beginner when it comes to C#, Unity and game design in general, so I want this blog to be a collection of the skills I learn and a record of my progress as I get to grips with game dev.</description>
+      <guid>https://wsasaki01.github.io/posts/lets-redesign-a-game/</guid>
+      <description>Hi, I&amp;rsquo;m Will, and I&amp;rsquo;m learning to make games!
+In summer 2023, I released a game called Icebreaker for PICO-8. I was really happy with how it turned out at the time, but looking back on it, I feel unsatisfied.
+Icebreaker Gameplay For reference, you can play that version of Icebreaker here; it&amp;rsquo;ll stay up even after the new version is done.
+If you aren&amp;rsquo;t familiar with PICO-8, it&amp;rsquo;s a brilliant fantasy console made by zep.</description>
     </item>
     
   </channel>
