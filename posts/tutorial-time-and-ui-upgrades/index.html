@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Icebreaker DX, Part 3 - Tutorial Time! and UI Upgrades! 📝</title>
+    <meta name="description" content="Home-grown Indie Games">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Icebreaker DX, Part 3 - Tutorial Time! and UI Upgrades! 📝">
+    <meta property="og:description" content="Home-grown Indie Games">
+    <meta property="og:image" content="https://wsasaki01.github.io/pfp.JPG">
+    <meta property="og:image:secure_url" content="https://wsasaki01.github.io/pfp.JPG">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Icebreaker DX, Part 3 - Tutorial Time! and UI Upgrades! 📝">
+    <meta name="twitter:description" content="Home-grown Indie Games">
+    <meta property="twitter:domain" content="https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/">
+    <meta property="twitter:url" content="https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/">
+    <meta name="twitter:image" content="https://wsasaki01.github.io/pfp.JPG">
+
+    
+    <link rel="canonical" href="https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.edd985581bf860dfb4507e5885197f1680160c7fe19f23b31e183126d99dd596.js" integrity="sha256-7dmFWBv4YN&#43;0UH5YhRl/FoAWDH/hnyOzHhgxJtmd1ZY="></script>
+
+    
+    
+      
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://wsasaki01.github.io/">
+                <img src="https://wsasaki01.github.io//pfp.JPG" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://wsasaki01.github.io/">Will Sasaki</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://wsasaki01.github.io/posts/"> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://wsasaki01.github.io/projects/"> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/wsasaki01"><span data-feather='github'></span> GitHub </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://wsasaki01.github.io/posts/"> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://wsasaki01.github.io/projects/"> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/wsasaki01"><span data-feather='github'></span> GitHub </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Icebreaker DX, Part 3 - Tutorial Time! and UI Upgrades! 📝</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            February 2, 2024
+        </p>
+
+        <ul class="post-tags">
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>One of the biggest issues with Icebreaker is its tutorial; it&rsquo;s poorly paced, doesn&rsquo;t explain anything properly, and barely even teaches half of the game mechanics.</p>
+<p>Last time I finished the tutorial super late in development, so this time I&rsquo;m doing it at the start, and making it an essential part of the final experience.</p>
+<h2 id="what-needs-to-be-there">What needs to be there?</h2>
+<p>The tutorial needs, at a minimum:</p>
+<ul>
+<li>Movement</li>
+<li>Picking up the hammer</li>
+<li>Throwing the hammer</li>
+<li>Throwing to attack enemies</li>
+<li>Rolling</li>
+</ul>
+<p>Other mechanics, such as the varying enemy speeds, health drops, and more can be explained in later levels; those listed above are the core skills needed to play the game at its absolute simplest.</p>
+<h2 id="designing-the-tutorial">Designing the tutorial</h2>
+<p>To fit with the military theme, I want the tutorial to be set in a training room, with an army officer calling in to educate the player as a new recruit.</p>
+<p>Lots of the art here is probably tentative; I&rsquo;m sure I&rsquo;ll change a lot of it as I go.</p>
+<p>
+
+<figure>
+  <img src="/images/02-02-2024_1.gif" alt="The intro to the tutorial" loading="lazy" />
+  <figcaption style="text-align:center;color:grey;">The tutorial opens with some short dialogue</figcaption>
+</figure>
+</p>
+<p>
+
+<figure>
+  <img src="/images/02-02-2024_2.gif" alt="Interactive tutorial" loading="lazy" />
+  <figcaption style="text-align:center;color:grey;">The player completes certain actions to progress in the tutorial</figcaption>
+</figure>
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- dialogue</span>
+</span></span><span style="display:flex;"><span>td <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dattention!!</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">tHIS IS </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9cOLONEL</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">mAX</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d CALLING.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">di&#39;M HERE TO GUIDE</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">YOU THROUGH THE</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9BASICS OF COMBAT</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dlET&#39;S GET TO IT!&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">duSE </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9⬆️⬇️⬅️➡️</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d TO</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">MOVE AROUND THE</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">BATTLEFIELD.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dtO THE RIGHT IS</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">A SERVICE WEAPON,</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9THE hammer.</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">dpICK IT UP!&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dtHROW WITH</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9⬆️⬇️⬅️➡️</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d AND </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9🅾️</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d,</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">THEN PICK IT UP</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">AGAIN.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dgREAT!</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">tHROW THE HAMMER</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">AT ENEMIES TO</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9DESTROY</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d THEM.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">daMAZING! yOU SHOW</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">GREAT PROMISE...&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dfINALLY, </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9⬆️⬇️⬅️➡️</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">AND </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9❎</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d WHILE</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">EMPTY-HANDED TO</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9ROLL</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dwITH </span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">9GOOD TIMING</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d,</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">YOU CAN ROLL</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">THROUGH ENEMIES</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">9TAKING NO DAMAGE</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d.&#34;</span>,
+</span></span><span style="display:flex;"><span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">dyOU&#39;RE READY FOR</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">DEPLOYMENT.</span><span style="color:#ae81ff">\n\f</span><span style="color:#e6db74">8GOD SPEED,</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">RECRUIT</span><span style="color:#ae81ff">\f</span><span style="color:#e6db74">d!&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The dialogue is stored in a table, and incremented through; when a certain trigger is activated (pressing 🅾️, or performing the action being taught), the next dialogue is printed.</p>
+<p>This allows the player to proceed through the tutorial at their own pace, and gives them ample time to experiment with the skills they&rsquo;re being taught. It also replaces the original hub; I wanted players to have practice with the movement through navigating the main menu as the main character, but this tutorial gives them more than enough time to practice if they want.</p>
+<p>The dialogue also uses control codes to change colours; <code>\f9</code>, for example, sets the colour to orange (hex <code>9</code>), then <code>\fd</code> sets the colour back to dark grey (hex <code>d</code>, or 13 in decimal).</p>
+<p>I also chose not to use the camera implemented last time; I think the player should have a very clear view of their character while they&rsquo;re learning.</p>
+<h2 id="improving-the-game-ui">Improving the game UI</h2>
+<p>With the base of the tutorial made, I chose to add the UI top bar to main gameplay. This will consist of a map segment for the background, a thermometer-inspired health bar, the current score and combo, and remaining enemies.</p>
+<p>First, though, I need to make the score system. I want this to be more than just &ldquo;one kill is one point&rdquo;, but that runs into integer limits very quickly.</p>
+<p>I&rsquo;m going to reuse the score system I used last time; two integer variables store the first 4 digits and last 4 digits.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">increase_score</span>(score)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- increment score by amount given, multiplied by current combo</span>
+</span></span><span style="display:flex;"><span>    p_score1<span style="color:#f92672">+=</span>flr(score<span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>p_combo<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span>))
+</span></span><span style="display:flex;"><span>    p_combo<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">-- if the last 4 digits (1000s, 100s, 10s, 1s) reaches max, reset it and increment 10,000s</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (p_score1<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">9999</span>) p_score1<span style="color:#f92672">-=</span><span style="color:#ae81ff">9999</span> p_score2<span style="color:#f92672">+=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>That supports scores of up to 99,999,999, which&hellip; <em>should</em> be enough, I hope 😅 If it isn&rsquo;t, I could use a table system that appends new digits as needed, but this should work well enough.</p>
+<p>Then, I simply used this function whenever an enemy is killed, and printed it using LokiStriker&rsquo;s wonderfully blocky <a href="https://www.lexaloffle.com/bbs/?pid=125387">Picowide</a> font with a nice drop shadow.</p>
+<p>
+
+<figure>
+  <img src="/images/02-02-2024_3.gif" alt="Top UI bar shows health and current score" loading="lazy" />
+  <figcaption style="text-align:center;color:grey;">The top bar already looks cleaner than the original&#39;s!</figcaption>
+</figure>
+</p>
+<p>The new camera system also has the added benefit of allowing for a slightly larger map despite the UI bar taking up some screen real estate!</p>
+<hr>
+<p>Next steps include displaying the other two bits of info: the current combo, and the remaining enemies. I also need to implement losing health when hit, and I want to add the screen shake and hit-stop effects I used in the original, as well as the particle system for enemy deaths.</p>
+<p>Stay tuned!</p>
+<p>wsasaki</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+      <section class="social-icons">
+    <ul class="social-icons-list">
+        
+        <li class="social-icon">
+            <a href="https://twitter.com/wsasaki01" aria-label="Learn more on twitter">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="injected-svg svg-inject"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+            </a>
+        </li>
+        
+        <li class="social-icon">
+            <a href="https://www.reddit.com/user/wsasaki" aria-label="Learn more on reddit">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="injected-svg svg-inject"><title>Reddit</title><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"></path></svg>
+            </a>
+        </li>
+        
+        <li class="social-icon">
+            <a href="https://wsasaki01.itch.io/" aria-label="Learn more on itchio">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="injected-svg svg-inject"><title>Itch.io</title><path d="M3.13 1.338C2.08 1.96.02 4.328 0 4.95v1.03c0 1.303 1.22 2.45 2.325 2.45 1.33 0 2.436-1.102 2.436-2.41 0 1.308 1.07 2.41 2.4 2.41 1.328 0 2.362-1.102 2.362-2.41 0 1.308 1.137 2.41 2.466 2.41h.024c1.33 0 2.466-1.102 2.466-2.41 0 1.308 1.034 2.41 2.363 2.41 1.33 0 2.4-1.102 2.4-2.41 0 1.308 1.106 2.41 2.435 2.41C22.78 8.43 24 7.282 24 5.98V4.95c-.02-.62-2.082-2.99-3.13-3.612-3.253-.114-5.508-.134-8.87-.133-3.362 0-7.945.053-8.87.133zm6.376 6.477a2.74 2.74 0 0 1-.468.602c-.5.49-1.19.795-1.947.795a2.786 2.786 0 0 1-1.95-.795c-.182-.178-.32-.37-.446-.59-.127.222-.303.412-.486.59a2.788 2.788 0 0 1-1.95.795c-.092 0-.187-.025-.264-.052-.107 1.113-.152 2.176-.168 2.95v.005l-.006 1.167c.02 2.334-.23 7.564 1.03 8.85 1.952.454 5.545.662 9.15.663 3.605 0 7.198-.21 9.15-.664 1.26-1.284 1.01-6.514 1.03-8.848l-.006-1.167v-.004c-.016-.775-.06-1.838-.168-2.95-.077.026-.172.052-.263.052a2.788 2.788 0 0 1-1.95-.795c-.184-.178-.36-.368-.486-.59-.127.22-.265.412-.447.59a2.786 2.786 0 0 1-1.95.794c-.76 0-1.446-.303-1.948-.793a2.74 2.74 0 0 1-.468-.602 2.738 2.738 0 0 1-.463.602 2.787 2.787 0 0 1-1.95.794h-.16a2.787 2.787 0 0 1-1.95-.793 2.738 2.738 0 0 1-.464-.602zm-2.004 2.59v.002c.795.002 1.5 0 2.373.953.687-.072 1.406-.108 2.125-.107.72 0 1.438.035 2.125.107.873-.953 1.578-.95 2.372-.953.376 0 1.876 0 2.92 2.934l1.123 4.028c.832 2.995-.266 3.068-1.636 3.07-2.03-.075-3.156-1.55-3.156-3.025-1.124.184-2.436.276-3.748.277-1.312 0-2.624-.093-3.748-.277 0 1.475-1.125 2.95-3.156 3.026-1.37-.004-2.468-.077-1.636-3.072l1.122-4.027c1.045-2.934 2.545-2.934 2.92-2.934zM12 12.714c-.002.002-2.14 1.964-2.523 2.662l1.4-.056v1.22c0 .056.56.033 1.123.007.562.026 1.124.05 1.124-.008v-1.22l1.4.055C14.138 14.677 12 12.713 12 12.713z"></path></svg>
+            </a>
+        </li>
+        
+        <li class="social-icon">
+            <a href="https://www.lexaloffle.com/bbs/?uid=75896" aria-label="Learn more on lexaloffle">
+                <svg role="img" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg" class="injected-svg svg-inject"><path d="m204.2871094 0v101.8828125l-102.1425781.26171875-.26171875 102.1425781h-101.8828125v103.4257812h101.8886719v102.3984375h102.3984375v101.8886719h103.4257812v-101.8886719h102.3984375v-102.3984375h101.8886719v-103.4257812h-101.8886719v-102.3984375h-102.3984375v-101.8886719h-103.4257812zm1.02539063 102.9121094h101.375v102.4003906h102.4003906v101.3710938l-102.1445312.25976563-.25976563 102.1445312h-101.3710938v-102.4003906h-102.4003906v-101.375h102.4003906v-102.4003906z"></path></svg>
+            </a>
+        </li>
+        
+    </ul>
+</section>
+  
+    
+
+    
+    <span>&copy; 2024 William Sasaki</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
