@@ -6,40 +6,14 @@
     <description>Recent content on Will Sasaki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Feb 2024 23:50:15 +0000</lastBuildDate><atom:link href="https://wsasaki01.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Aug 2023 22:57:19 +0100</lastBuildDate><atom:link href="https://wsasaki01.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Icebreaker DX, Part 3 - Tutorial Time! and UI Upgrades! 📝</title>
-      <link>https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/</link>
-      <pubDate>Fri, 02 Feb 2024 23:50:15 +0000</pubDate>
+      <title></title>
+      <link>https://wsasaki01.github.io/index-about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://wsasaki01.github.io/posts/tutorial-time-and-ui-upgrades/</guid>
-      <description>One of the biggest issues with Icebreaker is its tutorial; it&amp;rsquo;s poorly paced, doesn&amp;rsquo;t explain anything properly, and barely even teaches half of the game mechanics.
-Last time I finished the tutorial super late in development, so this time I&amp;rsquo;m doing it at the start, and making it an essential part of the final experience.
-What needs to be there? The tutorial needs, at a minimum:
-Movement Picking up the hammer Throwing the hammer Throwing to attack enemies Rolling Other mechanics, such as the varying enemy speeds, health drops, and more can be explained in later levels; those listed above are the core skills needed to play the game at its absolute simplest.</description>
-    </item>
-    
-    <item>
-      <title>Icebreaker DX, Part 2 - Starting Development ⌨️</title>
-      <link>https://wsasaki01.github.io/posts/starting-development/</link>
-      <pubDate>Tue, 30 Jan 2024 23:37:19 +0000</pubDate>
-      
-      <guid>https://wsasaki01.github.io/posts/starting-development/</guid>
-      <description>Time to begin development!
-If you&amp;rsquo;ve never used PICO-8 before, it imposes a &amp;ldquo;token&amp;rdquo; limit of 8192. Tokens include variable names, special characters like . or [], and keywords like function. It&amp;rsquo;s probably the biggest limitation on game scope, and something of a pain to optimise around once your game reaches a certain size; it&amp;rsquo;s part of the fun though!
-I&amp;rsquo;m starting with the art and sound from the previous version as a boilerplate, but I&amp;rsquo;m rewriting the code from scratch to hopefully find token optimisations as I go.</description>
-    </item>
-    
-    <item>
-      <title>Icebreaker DX, Part 1 - Let&#39;s Redesign a Game! ✨</title>
-      <link>https://wsasaki01.github.io/posts/lets-redesign-a-game/</link>
-      <pubDate>Sun, 28 Jan 2024 00:30:21 +0000</pubDate>
-      
-      <guid>https://wsasaki01.github.io/posts/lets-redesign-a-game/</guid>
-      <description>Hi, I&amp;rsquo;m Will, and I&amp;rsquo;m learning to make games!
-In summer 2023, I released a game called Icebreaker for PICO-8. I was really happy with how it turned out at the time, but looking back on it, I feel unsatisfied.
-Icebreaker Gameplay For reference, you can play that version of Icebreaker here; it&amp;rsquo;ll stay up even after the new version is done.
-If you aren&amp;rsquo;t familiar with PICO-8, it&amp;rsquo;s a brilliant fantasy console made by zep.</description>
+      <guid>https://wsasaki01.github.io/index-about/</guid>
+      <description></description>
     </item>
     
   </channel>
